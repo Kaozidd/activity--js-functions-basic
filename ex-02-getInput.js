@@ -35,9 +35,9 @@ console.assert(sumMinZero(1848, -4124) === 0)
 
 function getInput(par) {
 	if (typeof par === "number") {
-		return "Please provide string input.";
+		return "Please provide string input, NOT a number";
 	} else if (typeof par !== "string") {
-		return "Please provide a string input, NOT a number";
+		return "Please provide a string input.";
 	} else {
 		return "DATA_RECEIVED: " + par;
 	}
