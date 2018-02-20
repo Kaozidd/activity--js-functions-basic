@@ -7,6 +7,15 @@
 //
 //------------------------------------------------------------------
 
+function sumMinZero(n1, n2) {
+	if ((n1 + n2) < 0) {
+		return 0;
+	} else {
+		let sum = n1 + n2;
+		return sum;
+	}
+}
+
 console.assert(sumMinZero(10, 10) === 20)
 console.assert(sumMinZero(30, 10) === 40)
 console.assert(sumMinZero(-30, 10) === 0)
@@ -23,6 +32,16 @@ console.assert(sumMinZero(1848, -4124) === 0)
 //  Examine the functionality of `getInput` in the function below
 //------------------------------------------------------------------
 
+
+function getInput(par) {
+	if (typeof par === "number") {
+		return "Please provide string input.";
+	} else if (typeof par !== "string") {
+		return "Please provide a string input, NOT a number";
+	} else {
+		return "DATA_RECEIVED: " + par;
+	}
+}
 
 console.assert(getInput() === "Please provide string input.")
 console.assert(getInput(333) === "Please provide a string input, NOT a number")
